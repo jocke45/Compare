@@ -11,8 +11,11 @@ def checker(index, lis, string):
             return i
     return False
 
-print "Name of script: ", sys.argv[0]
-print "Args: ", str(sys.argv)
+print ""
+print "###############"
+print "# {}".format(sys.argv[0])
+print "# Files: {}, {}".format(str(sys.argv[1]), str(sys.argv[2]))
+print "###############"
 print ""
 
 linesX = []
@@ -37,6 +40,7 @@ if linesX == linesY:
 
 while True:
     if linesX[x] != linesY[y]:
+        print "Diff line {} in file {} and line {} in file {}".format(x, str(sys.argv[1]), y, str(sys.argv[2]))
         ret = checker(x, linesY, linesX[x])
         if ret:
             for i in range(x, ret):
