@@ -1,5 +1,5 @@
 # Compare
-Python 2.7 program comparing two files and adding the differing data
+Python 2.7 program comparing two files and making them identical by inserting missing rows.
 
 ## Input
 Two txt or otherwise readable text files
